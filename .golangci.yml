@@ -1,0 +1,26 @@
+version: "1"
+run:
+  timeout: 3m
+  issues-exit-code: 1
+  tests: true
+
+linters:
+  enable:
+    - errcheck
+    - gosimple
+    - govet
+    - ineffassign
+    - staticcheck
+    - typecheck
+    - unused
+    - revive
+  disable:
+    - depguard
+    - gocyclo
+    - dupl
+
+issues:
+  max-issues-per-linter: 0
+  max-same-issues: 0
+  
+
